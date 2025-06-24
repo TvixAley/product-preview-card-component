@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Product preview card component</title>
+
+  <link rel="stylesheet" href="src/css/styles.css">
+
+</head>
+<body>
+  <main>
+    <h1 class="visually-hidden">Product Page: Gabrielle Essence Eau De Parfum</h1>
+    <article class="product-card">
+      <div class="product-card__image-wrapper">
+        <picture>
+          <source srcset="assets/images/image-product-mobile.jpg" media="(max-width: 650px)">
+          <img
+            class="product-card__image"
+            src="assets/images/image-product-desktop.jpg"
+            alt="Bottle of Gabrielle Essence Eau De Parfum by Chanel" 
+            width="300" loading="lazy">
+        </picture>
+      </div>
+      <div class="product-card__content">
+        <div class="product-card__text-block">
+          <span class="product-card__category">PERFUME</span>
+          <h2 class="product-card__product-name">Gabrielle Essence Eau De Parfum</h2>
+          <p class="product-card__description">A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL.</p>
+        </div>
+        <div class="product-card__price-block">
+          <span class="product-card__current-price">$149.99</span>
+          <del class="product-card__old-price">$169.99</del>
+        </div>
+        <button type="button" class="product-card__cart-button" aria-label="Add Gabrielle Essence Eau De Parfum to cart">
+          <img src="assets/images/icon-cart.svg" alt="" aria-hidden="true" height="18" width="18">
+          Add to Cart
+        </button>
+      </div>
+    </article>
+  </main>
+</body>
+</html>
